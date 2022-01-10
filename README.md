@@ -1,1 +1,1 @@
-# my-first-repository
+# conceptual-session
