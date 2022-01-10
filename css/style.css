@@ -1,0 +1,28 @@
+
+/* all common css start from */
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+ul,li,ol{
+    list-style-type: none;
+}
+a{
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,span{
+   margin: 0px;
+   padding: 0px;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    overflow-x: hidden;
+}
+/* all common css end from */
