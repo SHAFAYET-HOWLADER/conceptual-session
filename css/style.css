@@ -1,5 +1,9 @@
 
-/* all common css start from */
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;400;');
+/* google fonts */
+
+/* all common css end from */
 *{
     margin: 0px;
     padding: 0px;
@@ -23,6 +27,30 @@ img{
     vertical-align: middle;
 }
 body{
-    overflow-x: hidden;
+    background-color: #d1d1d1;
+    font-family: 'Oswald', sans-serif;
 }
 /* all common css end from */
+
+/*-------|-banner part start--|-------*/
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.banner{
+    display: flex;
+    height: 90vh;
+}
+.banner-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-right{
+  flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*-------|-banner part end--|-------*/
