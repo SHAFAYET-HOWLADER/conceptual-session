@@ -197,4 +197,81 @@ body{
         content: 'programming hero|';
     }
 }
-/*---------|-banner part end--|--------*/
+/*---------|--banner part end--|--------*/
+
+/*---------|--gallery part start--|--------*/
+#gallery{
+    padding: 50px 0px;
+}
+.gallery-title h1{
+   text-align: center;
+   font-size: 40px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   text-transform: capitalize;
+   color: #22be22;
+   padding-bottom: 20px;
+}
+.gallery-photo{
+    height: 280px;
+    width: 280px;
+    position: relative;
+    animation: linear .4s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gallery-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.border{
+    background-color: #22be22;
+    position: absolute;
+}
+.border.top, .border.bottom{
+   height: 4px;
+   width: 280px;
+}
+.border.left, .border.right{
+   width: 4px;
+   height: 280px;
+}
+.border.top{
+  top: 0px;
+  left: 100%;
+  transition: all linear .4s;
+}
+.border.right{
+  top: 100%;
+  right: 0px;
+  transition: all linear .4s;
+}
+.border.bottom{
+  bottom: 0px;
+  right: 100%;
+  transition: all linear .4s;
+}
+.border.left{
+  bottom: 100%;
+  left: 0px;
+  transition: all linear .4s;
+}
+.gallery-photo:hover .border.top{
+    left: 0px;
+}
+.gallery-photo:hover .border.right{
+    top: 0px;
+}
+.gallery-photo:hover .border.bottom{
+    right: 0px;
+}
+.gallery-photo:hover .border.left{
+    bottom: 0px;
+}
+#gallery .container >div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/*---------|--gallery part end--|--------*/
