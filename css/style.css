@@ -15,6 +15,7 @@ ul,li,ol{
 }
 a{
     display: inline-block;
+    text-decoration: none;
 }
 a:hover{
     text-decoration: none;
@@ -32,14 +33,14 @@ body{
 }
 /* all common css end from */
 
-/*-------|-banner part start--|-------*/
+/*---------|-banner part start--|--------*/
 .container {
     max-width: 1200px;
     margin: 0px auto;
 }
 .banner{
     display: flex;
-    height: 90vh;
+    height: 100vh;
 }
 .banner-left{
     flex: 1;
@@ -53,4 +54,147 @@ body{
    justify-content: center;
    align-items: center;
 }
-/*-------|-banner part end--|-------*/
+.banner-title{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #22be22;
+    position: relative;
+    color: transparent;
+}
+.banner-para{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 22px;
+    padding: 15px 0px;
+}
+.banner-left > div a{
+    padding: 10px 25px;
+    background-color: #22be22;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all linear .4s;
+}
+.banner-left > div a:hover{
+    border: 2px solid  #22be22;
+    color: #fff;
+    background-color: #000;
+}
+.banner-title:before{
+    position: absolute;
+    content: 'programming hero';
+    top: 0px;
+    left: 0px;
+    color: #22be22;
+    animation: typing 7s ease-in infinite;
+}
+@keyframes typing{
+    0%{
+        content: 'P |';
+    }
+    4%{
+        content: 'Pr |';
+    }
+    8%{
+        content: 'Pro |';
+    }
+    12%{
+        content: 'Prog |';
+    }
+    16%{
+        content: 'Progr |';
+    }
+    20%{
+        content: 'Progra |';
+    }
+    24%{
+        content: 'Program |';
+    }
+    28%{
+        content: 'Programm |';
+    }
+    32%{
+        content: 'Pprogrammi |';
+    }
+    36%{
+        content: 'Programmin |';
+    }
+    40%{
+        content: 'Programming |';
+    }
+    44%{
+        content: 'Programming |';
+    }
+    48%{
+        content: 'Programming H |';
+    }
+    52%{
+        content: 'Programming He |';
+    }
+    56%{
+        content: 'Programming Her |';
+    }
+    56%{
+        content: 'Programming Hero |';
+    }
+    56%,
+    84%{
+        content: 'Programming Hero|';
+    }
+    85%{
+        content: 'Programming Her|';
+    }
+    86%{
+        content: 'Programming He|';
+    }
+    87%{
+        content: 'Programming H|';
+    }
+    88%{
+        content: 'Programming|';
+    }
+    89%{
+        content: 'Programmin|';
+    }
+    90%{
+        content: 'Programmi|';
+    }
+    91%{
+        content: 'Programm|';
+    }
+    92%{
+        content: 'Program|';
+    }
+    93%{
+        content: 'Progra|';
+    }
+    94%{
+        content: 'Progr|';
+    }
+    95%{
+        content: 'Prog|';
+    }
+    96%{
+        content: 'Pro|';
+    }
+    97%{
+        content: 'Pr|';
+    }
+    98%{
+        content: 'p|';
+    }
+    99%{
+        content: '|';
+    }
+    100%{
+        content: 'programming hero|';
+    }
+}
+/*---------|-banner part end--|--------*/
